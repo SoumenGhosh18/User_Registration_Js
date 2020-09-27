@@ -19,5 +19,15 @@ class Implementation {
             console.log("sorry its invalid");
         }
     }
+    emailAddressValidator(email) {
+        let EMAIL_PATTERN = new RegExp("^[a-zA-Z0-9]+([.][a-zA-Z0-9]+)?@[a-zA-Z0-9]+.[a-zA-Z]{2,4}([.][a-zA-Z]{2})?$");
+
+        if (EMAIL_PATTERN.test(email)) {
+            console.log("Thank you its valid");
+        }
+        else {
+            console.log("sorry its invalid");
+        }
+    }
 }
 module.exports = new Implementation();

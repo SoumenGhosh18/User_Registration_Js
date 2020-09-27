@@ -16,6 +16,10 @@ class main {
                     input.question("Enter First Name: ", function (lastName) {
                         a.firstNameValidator(lastName);
                     })
+                case "3":
+                    input.question("Enter Email Address: ", function (email) {
+                       a.emailValidator(email);
+                        })
                 default:
                     console.log("Enter Valid option");
                     break;
