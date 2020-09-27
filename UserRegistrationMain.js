@@ -27,7 +27,7 @@ class main {
                         })
                     break;
                     case "5":
-                        input.question("Enter Password with min 8 character:", function (password) {
+                        input.question("Enter Password with Min 8 Character And One uppercase:", function (password) {
                         a.passwordValidator(password);
                         })
                         break;    

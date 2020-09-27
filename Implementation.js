@@ -40,7 +40,7 @@ class Implementation {
         }
     }
     passwordValidator(password) {
-        let PASSWORD_PATTERN = new RegExp("[a-zA-Z]{8,}");
+        let PASSWORD_PATTERN = new RegExp("[A-Z]{1,}[a-z]{8,}");
 
         if (PASSWORD_PATTERN.test(password)) {
             console.log("Thank you its valid");
