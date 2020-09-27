@@ -20,6 +20,12 @@ class main {
                     input.question("Enter Email Address: ", function (email) {
                        a.emailValidator(email);
                         })
+                    break;
+                case "4":
+                    input.question("Enter Phone Number: \n", function (phoneNumber) {
+                       a.phoneNumberValidator(phoneNumber);
+                        })
+                    break;
                 default:
                     console.log("Enter Valid option");
                     break;

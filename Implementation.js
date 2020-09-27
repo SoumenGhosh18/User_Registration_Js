@@ -29,5 +29,15 @@ class Implementation {
             console.log("sorry its invalid");
         }
     }
+    phoneNumberValidator(phoneNumber) {
+        let PHONE_NUMBER_PATTERN = new RegExp("^([0-9]{2}[ ]+)?[0-9]{10}$");
+
+        if (PHONE_NUMBER_PATTERN.test(phoneNumber)) {
+            console.log("Thank you its valid");
+        }
+        else {
+            console.log("sorry its invalid");
+        }
+    }
 }
 module.exports = new Implementation();
