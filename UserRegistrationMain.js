@@ -12,6 +12,10 @@ class main {
                         a.firstNameValidator(firstName);
                     })
                     break;
+                case "2":
+                    input.question("Enter First Name: ", function (lastName) {
+                        a.firstNameValidator(lastName);
+                    })
                 default:
                     console.log("Enter Valid option");
                     break;
