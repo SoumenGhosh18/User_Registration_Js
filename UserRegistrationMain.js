@@ -22,10 +22,15 @@ class main {
                         })
                     break;
                 case "4":
-                    input.question("Enter Phone Number: \n", function (phoneNumber) {
+                    input.question("Enter Phone Number: ", function (phoneNumber) {
                        a.phoneNumberValidator(phoneNumber);
                         })
                     break;
+                    case "5":
+                        input.question("Enter Password with min 8 character:", function (password) {
+                        a.passwordValidator(password);
+                        })
+                        break;    
                 default:
                     console.log("Enter Valid option");
                     break;

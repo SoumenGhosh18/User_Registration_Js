@@ -39,5 +39,15 @@ class Implementation {
             console.log("sorry its invalid");
         }
     }
+    passwordValidator(password) {
+        let PASSWORD_PATTERN = new RegExp("[a-zA-Z]{8,}");
+
+        if (PASSWORD_PATTERN.test(password)) {
+            console.log("Thank you its valid");
+        }
+        else {
+            console.log("sorry its invalid");
+        }
+    }
 }
 module.exports = new Implementation();
