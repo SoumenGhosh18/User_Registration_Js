@@ -1,4 +1,4 @@
-const a = require('./Implementation');
+const result = require('./Implementation');
 class main {
     main() {
         console.log("Welcome to User Validation");
@@ -9,30 +9,35 @@ class main {
             switch (option) {
                 case "1":
                     input.question("Enter First Name: ", function (firstName) {
-                        a.firstNameValidator(firstName);
+                        result.firstNameValidator(firstName);
+                        process.exit();
                     })
                     break;
                 case "2":
-                    input.question("Enter First Name: ", function (lastName) {
-                        a.firstNameValidator(lastName);
+                    input.question("Enter Last Name: ", function (lastName) {
+                        result.firstNameValidator(lastName);
+                        process.exit();
                     })
                 case "3":
                     input.question("Enter Email Address: ", function (email) {
-                       a.emailValidator(email);
+                        result.emailValidator(email);
+                       process.exit();
                         })
                     break;
                 case "4":
                     input.question("Enter Phone Number: ", function (phoneNumber) {
-                       a.phoneNumberValidator(phoneNumber);
+                        result.phoneNumberValidator(phoneNumber);
+                       process.exit();
                         })
                     break;
-                    case "5":
+                case "5":
                         input.question("Enter Password with Min 8 Char,One uppercase, one numeric and one spl char: ", function (password) {
-                        a.passwordValidator(password);
+                            result.passwordValidator(password);
                         })
                         break;    
                 default:
                     console.log("Enter Valid option");
+                    process.exit();
                     break;
             }
         }) 
